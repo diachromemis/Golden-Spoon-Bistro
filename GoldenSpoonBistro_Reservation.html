@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Spoon Bistro - Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reservation-form">
+            <h1>Make a Reservation</h1>
+            <p>Reserve your table in advance and enjoy a seamless dining experience at Golden Spoon Bistro.</p>
+            <form action="submit_reservation.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Reservation Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required min="1" max="20" placeholder="Number of guests">
+
+                <label for="message">Special Requests:</label>
+                <textarea id="message" name="message" placeholder="Any special requests"></textarea>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Golden Spoon Bistro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
